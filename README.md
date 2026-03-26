@@ -18,6 +18,8 @@ It blends familiarity with flexibility, giving administrators and engineers a sa
 * **Mock Active Directory Structure**
 
   * Create domains, OUs, users, gmsa, groups, policies, and computers
+  * Drag & Drop items to move them around the tree
+  * Ctrl+C and Ctrl+V to copy and paste a node and its children to another location
 
 * **Visualization**
 
